@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet"  href="portfolio.css">
+        <script src="portfolio.js"></script>
+        <title>Miranda Andrade | Home</title>
+    </head>
+    <body>
+        <div class="side-nav">
+            <div id="avi" onclick="showBio()"><p>MA</p></div>
+            <a class="current" href="landing.html">Work</a>
+            <a href="resume.html">Resume</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+        <section class="right-screen">
+
+        <section class="header">
+            <div class="header-text">
+                <h1>Miranda Andrade</h1>
+                <h3>Recent Projects</h3>
+            </div>
+        </section>
+
+        <section class="project-container">
+
+            <div id="project1" class="project"  onclick="showPopup1()">
+                <div><img class="project-pic" alt="Image of an icon dipicting website building." src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJBwrchRJiZfynhZbUuP6S6D4yZg6oL24OUg&usqp=CAU"></div>
+                <div class="project-info">
+                    <h1 class="project-title">Portfolio Website</h1>
+                    <h2 class="project-date">November 2020</h2>
+                    <span class="project-twoliner">Simple and effective portfolio website for online professionals. Made using HTML, CSS, and JavaScript.</span>
+                    <p>Click to Learn more!</p>
+                </div>
+
+            </div>
+
+            <div id="project2" class="project"  onclick="showPopup2()">
+                <div><img class="project-pic" alt="Kaleidoscopic picture depciting a serious man with a repeated screaming woman surroudning him." src="https://images.squarespace-cdn.com/content/v1/56f4179737013bbfb02fd393/1606000444023-VVVEKF2PWOMN2ZXFV2P4/ke17ZwdGBToddI8pDm48kKm1bahxI_LCrMCA82fwbZN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USBDQccYI1SvwMZkRM-vHsx28Iz_kth4mYPFIj_3iPSgZi9ON07G6OunhMTYtjQPiQ/Sarah+5.jpg?format=750w"></div>
+                <div class="project-info">
+                    <h1 class="project-title">Phantasmagoria Photoshoot</h1>
+                    <h2 class="project-date">October 2020</h2>
+                    <span class="project-twoliner">Photoshoot for STITCH magazaine. "Phantasmagoria: A shifting series of phantasms, illusions, or deceptive appearances, as in a dream or created by the imagination."</span>
+                    <p>Click to Learn more!</p>
+                </div>
+
+            </div>
+
+            <div id="project3" class="project" onclick="showPopup3()">
+                <div>
+                    <img class="project-pic" alt="Image of person using a smart phone." src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFVIaTsesuaXS2hvxywTam1l3HQNQhM8P6Bg&usqp=CAU">
+                </div>
+                <div class="project-info">
+                    <h1 class="project-title">Music Player App Frame</h1>
+                    <h2 class="project-date">October 2020</h2>
+                    <span class="project-twoliner">A very basic Music Player App, without the music. Frame depends on HTML, CSS and  JavaScript.</span>
+                    <p>Click to Learn more!</p>
+                </div>
+            </div>
+
+
+      </section>
+      </section>
+
+
+    <div id="blackout" class="blackout" onclick="hidePopup1();hidePopup2()" ></div>
+    <div id="project1-popup" class="project-popup">
+        <span class="close" onclick="hidePopup1()">&times;</span>
+        <p><em>Portfolio Website</em><br>This project was my first time designing a proper functional website. As you can see from navitgating it currently, I used simple designs complemented by colorful accesnts to create an effective and visually pleasing site. Languages used include: HTML, CSS, JavaScript.<br><a href="">project</a></p>
+    </div>
+
+    <div id="project2-popup" class="project-popup">
+        <span class="close" onclick="hidePopup2()">&times;</span>
+      <p><em>Phantasmagoria Photoshoot</em><br>This shoot is part of STICH magazines 44th release, the Reverie Issue. With this shoot, we explored the uncomforatble and inescapable as our minds are not always the most welcoming places. In order to capture the darker side of fantasy, we used distorting filters, bright colors, and jarring makeup.<br><a href="http://www.stitchfashion.com/phantasmagoria">proejct link</a></p>
+    </div>
+
+    <div id="project3-popup" class="project-popup">
+        <span class="close" onclick="hidePopup3()">&times;</span>
+        <p><em>Music Player App Frame</em><br>This project sought to create the framework of a functional music player app. Different HTML pages, including an album screen, song screen and player screen, are navigateble and display the current song being "played." Soon to be implemented in a full style application. Languages used include: HTML, CSS, JavaScript.<br></p>
+    </div>
+
+    </body>
+
+</html>
